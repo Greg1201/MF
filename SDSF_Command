@@ -1,0 +1,14 @@
+/* rexx */                              
+RC=ISFCALLS('ON')                       
+address SDSF "ISFEXEC '/d r,l'"         
+do ix=1 to isfresp.0                    
+   say isfresp.ix                       
+end                                     
+/*********************************/     
+/*       VIEW A ULOG             */     
+/*********************************/     
+do ix=1 to isfulog.0                    
+  say "isfulog."ix "is" isfulog.ix      
+end                                     
+RC=ISFCALLS('OFF')                      
+exit                                    
