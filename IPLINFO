@@ -1,9 +1,6 @@
 /* rexx */                          
 RC=ISFCALLS('ON')                   
 address SDSF "ISFEXEC '/d iplinfo'" 
-do ix=1 to isfresp.0                
-   say isfresp.ix                   
-end                                 
 /*********************************/ 
 /*       VIEW A ULOG             */ 
 /*********************************/ 
