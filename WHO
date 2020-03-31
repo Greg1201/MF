@@ -1,0 +1,10 @@
+/* rexx */                                            
+RC=ISFCALLS('ON')                                     
+address SDSF "ISFEXEC who"                            
+/* The responses are returned in the isfresp stem */  
+clrscn                                                
+  do ix=1 to isfresp.0                                
+   say isfresp.ix                                     
+end                                                   
+RC=ISFCALLS('OFF')                                    
+exit                                                  
